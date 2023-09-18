@@ -1,0 +1,35 @@
+\documentclass[]{article}
+\usepackage[english,magyar]{babel}
+\usepackage{t1enc}
+\usepackage{blindtext}
+\usepackage{hulipsum}
+\usepackage{lipsum}
+\frenchspacing
+\begin{document}
+\title{Cím}
+\author{szerző}
+\date{\today}
+\maketitle
+\begin{abstract}
+\hulipsum[2]
+\footnote{szöveg}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\end{abstract}
+\noindent
+\setlength{\parskip}{12pt}
+\begin{otherlanguage}{english}
+\today \\
+\blindtext[2]
+\end{otherlanguage}{english}
+\begin{flushright}
+\today \\
+\hulipsum[3]
+\end{flushright}
+\linespread{1.6}
+\selectfont
+\begin{otherlanguage}{latin}
+\lipsum[2]
+\end{otherlanguage}{latin}
+\tableofcontents
+\clearpage
+\end{document}

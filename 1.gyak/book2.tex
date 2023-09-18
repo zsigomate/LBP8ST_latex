@@ -1,0 +1,49 @@
+\documentclass[twocolumn]{book}
+\usepackage[magyar]{babel}
+\usepackage{t1enc}
+\usepackage{hulipsum}
+\usepackage{footmisc}
+\usepackage{geometry}
+\usepackage{multicol}
+\geometry{inner=3cm,outer=5cm,
+top=3cm,bottom=3cm}
+\geometry{bindingoffset=1cm}
+\setlength{\skip\footins}{0.5cm}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+\begin{document}
+\begin{mulitcols}{2}
+\setlength{\columnsep}{2cm}
+\end{multicols}
+\title{Cím}
+\author{szerző}
+\date{\today}
+\maketitle
+\frontmatter
+\tableofcontents
+\clearpage
+\hulipsum[4]
+\mainmatter
+\section[szc]{Szakaszcím 1}
+\subsection{alszakasz 1}
+\hulipsum[2]
+\subsection{alszakasz 2}
+\hulipsum[3]
+\section{Szakaszcím 2}
+\subsection{subs}
+\subsubsection{subsubs}
+\paragraph{para}
+\subparagraph{subpara}
+\appendix
+\section{Függelék A}
+\subsection{Alrész A.1}
+\subsection{Alrész A.2}
+\section{Függelék B}
+\footnote{szélegyzék}
+\subsection{Alrész B.1}
+\subsection{Alrész B.2}
+\footnote{szélegyzék}
+
+
+
+\end{document}
